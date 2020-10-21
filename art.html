@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClipArtNepall - BasuProject</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+          asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+          asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+          crossorigin="anonymous"
+          integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link href="css/topcard.css" rel="stylesheet" />
+    <link href="css/categories.css" rel="stylesheet" />
+    <link href="css/search.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="images/basu_logo.jpg" height="50" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <div class="row">
+                <div class="col-8">
+                    <div class="col border">
+                        <img class="img mx-auto d-block" src="https://image.shutterstock.com/image-vector/crowd-young-men-women-holding-600w-1075031486.jpg" />
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div id="loggedIn" class="border py-5" style="display:block;">
+                        <div class="col-12">
+                            <button type="button" class="btn btn-outline-dark">Vector</button>
+                            <button type="button" class="btn btn-outline-dark">PSD</button>
+                            <button type="button" class="btn btn-outline-dark">PNG</button>
+                            <button type="button" class="btn btn-outline-dark">JPEG</button>
+                        </div>
+                        <div class="mt-3">
+                            <div class="col">
+                                <button type="button" class="btn btn-block btn-success">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="loggedOut">
+                        <div class="col-12 border py-5">
+                            <form id="frmCreateAccount" style="display:none;">
+                                <h2>Create account</h2>
+                                <div class="form-group">
+                                    <input type="email" id="RegisterEmail" class="form-control" name="RegisterEmail" placeholder="Email" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" id="RegisterPassword" class="form-control" name="RegisterPassword" placeholder="Password" />
+                                </div>
+                                <button type="submit" class="btn btn-block btn-primary">Create</button>
+                                <div class="form-group">
+                                    <p class="small pt-2">By creating an account, I agree to Basuarts's <a href="#">Website terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Licensing terms</a>.</p>
+                                </div>
+                                <div class="form-group">
+                                    <p>Already have an account? <a href="javascript:loginLink();">Log in</a></p>
+                                </div>
+                            </form>
+                            <form id="frmLogin" style="display:none;">
+                                <h2>Login</h2>
+                                <div class="form-group">
+                                    <input type="email" id="Email" class="form-control" name="Email" placeholder="Email" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" id="Password" class="form-control" name="Password" placeholder="Password" />
+                                </div>
+                                <button type="submit" class="btn btn-block btn-success">Login</button>
+                                <div class="form-group"><a class="small d-block text-right my-2" href="#">Forgot your password?</a></div>
+                                <button type="button" id="btnCreateAccount" class="btn btn-block btn-outline-dark">Create</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Tags</h2>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <p>Category: <a href="#">Animation</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img class="img img-thumbnail mx-auto d-block" src="https://image.shutterstock.com/image-vector/crowd-young-men-women-holding-600w-1075031486.jpg" />
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img class="img img-thumbnail mx-auto d-block" src="https://image.shutterstock.com/image-vector/crowd-young-men-women-holding-600w-1075031486.jpg" />
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img class="img img-thumbnail mx-auto d-block" src="https://image.shutterstock.com/image-vector/crowd-young-men-women-holding-600w-1075031486.jpg" />
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img class="img img-thumbnail mx-auto d-block" src="https://image.shutterstock.com/image-vector/crowd-young-men-women-holding-600w-1075031486.jpg" />
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img class="img img-thumbnail mx-auto d-block" src="https://image.shutterstock.com/image-vector/crowd-young-men-women-holding-600w-1075031486.jpg" />
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2019 - BasuProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+            asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+            asp-fallback-test="window.jQuery"
+            crossorigin="anonymous"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"
+            asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+            crossorigin="anonymous"
+            integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4=">
+    </script>
+    <script src="js/site.js" asp-append-version="true"></script>
+</body>
+</html>

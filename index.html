@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClipArtNepall - BasuProject</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+          asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+          asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+          crossorigin="anonymous"
+          integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link href="css/topcard.css" rel="stylesheet" />
+    <link href="css/categories.css" rel="stylesheet" />
+    <link href="css/search.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="images/basu_logo.jpg" height="50" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="jumbotron search-bg">
+        <div class="col-6 offset-3 p-5">
+            <div class="input-group m-3 p-5">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Search</span>
+                </div>
+                <input type="text" class="form-control" />
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="material-icons">search</i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <h1 class="text-center mb-5">Recent</h1>
+            <div class="row">
+                <div class="col">
+                    <a href="art.html">
+                        <img class="img img-fluid" src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="art.html">
+                        <img class="img img-fluid" src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="art.html">
+                        <img class="img img-fluid" src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="art.html">
+                        <img class="img img-fluid" src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+                    </a>
+                </div>
+            </div>
+            <h2 class="text-center m-5">Category</h2>
+            <div class="row">
+                <div class="col-ms-6 col-md-4">
+                    <a href="arts.html">
+                        <div class="category-card">
+                            <div class="category-card-img">
+                                <img src="https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" />
+                            </div>
+                            <div class="content">
+                                <h2 class="title">Cartoon</h2>
+                                <!--<p>This is a description for Cartoon</p>-->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-ms-6 col-md-4">
+                    <a href="arts.html">
+                        <div class="category-card">
+                            <div class="category-card-img">
+                                <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                            </div>
+                            <div class="content">
+                                <h2 class="title">Travel</h2>
+                                <!--<p>This is a description for Travel</p>-->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-ms-6 col-md-4">
+                    <a href="arts.html">
+                        <div class="category-card">
+                            <div class="category-card-img">
+                                <img src="https://images.pexels.com/photos/2087391/pexels-photo-2087391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                            </div>
+                            <div class="content">
+                                <h2 class="title">Animation</h2>
+                                <!--<p>This is a description for Animation</p>-->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-ms-6 col-md-4">
+                    <a href="arts.html">
+                        <div class="category-card">
+                            <div class="category-card-img">
+                                <img src="https://images.pexels.com/photos/2007401/pexels-photo-2007401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                            </div>
+                            <div class="content">
+                                <h2 class="title">Photography</h2>
+                                <!--<p>This is a description for Photography</p>-->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-ms-6 col-md-4">
+                    <div class="category-card">
+                        <div class="category-card-img">
+                            <img src="https://images.pexels.com/photos/2087391/pexels-photo-2087391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                        </div>
+                        <div class="content">
+                            <h2 class="title">New Year</h2>
+                            <!--<p>This is a description for New Year</p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-ms-6 col-md-4">
+                    <a href="arts.html">
+                        <div class="category-card">
+                            <div class="category-card-img">
+                                <img src="https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" />
+                            </div>
+                            <div class="content">
+                                <h2 class="title">Celebration</h2>
+                                <!--<p>This is a description for Celebration</p>-->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-ms-6 col-md-4">
+                    <a href="arts.html">
+                        <div class="category-card">
+                            <div class="category-card-img">
+                                <img src="https://images.pexels.com/photos/2087391/pexels-photo-2087391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                            </div>
+                            <div class="content">
+                                <h2 class="title">Testing</h2>
+                                <!--<p>This is a description for Testing</p>-->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2019 - BasuProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+            asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+            asp-fallback-test="window.jQuery"
+            crossorigin="anonymous"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"
+            asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+            crossorigin="anonymous"
+            integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4=">
+    </script>
+    <script src="js/site.js" asp-append-version="true"></script>
+</body>
+</html>
